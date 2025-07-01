@@ -1,0 +1,11 @@
+.error {
+  color: red;
+  font-size: 12px;
+}
+div {
+  margin-bottom: 10px;
+}
+input, button {
+  margin: 5px;
+  padding: 5px;
+}

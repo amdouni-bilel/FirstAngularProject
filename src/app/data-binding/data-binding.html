@@ -1,0 +1,30 @@
+<h1>{{ title }}</h1>
+
+<!-- Interpolation -->
+<h2>1. Interpolation</h2>
+<p>La valeur de title est : {{ title }}</p>
+
+<!-- Property Binding -->
+<h2>2. Property Binding</h2>
+<input [value]="inputValue" placeholder="Exemple de property binding" /> <br><br>
+<button [disabled]="isDisabled">Clique-moi Property Binding </button> <br>
+<img [src]="imageUrl" width="150" alt="Logo Angular" />
+
+
+<!-- Event Binding -->
+<h2>3. Event Binding</h2>
+<h3>Exemple 1 de Event Binding</h3>
+
+<button (click)="onButtonClick()">Cliquez-moi</button>
+<p>{{ message }}</p>
+
+<h3>Exemple 2 de Event Binding</h3>
+<p>Compteur : {{ count }}</p>
+<!-- Appel de la méthode increment() au clic -->
+<button (click)="increment()">Incrémenter</button>
+
+
+<!-- Two-way Binding -->
+<h2>4. Two-way Binding</h2>
+<input [(ngModel)]="username" placeholder="Entrez votre nom" />
+<p>Nom saisi : {{ username }}</p>
