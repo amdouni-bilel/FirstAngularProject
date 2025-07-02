@@ -1,0 +1,25 @@
+<h2>Liste des produits</h2>
+
+<!-- *ngIf -->
+<p *ngIf="products.length === 0">Aucun produit disponible.</p>
+
+<!-- *ngFor + ngClass + ngStyle -->
+<ul>
+  <li *ngFor="let product of products"
+      [ngClass]="{ 'promo': product.promo }"
+      [ngStyle]="{ 'font-weight': product.price > 1000 ? 'bold' : 'normal' }">
+
+    {{ product.name }} - {{ product.price }} €
+    <span *ngIf="product.promo">🔥 Promo !</span>
+
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let product of products">
+
+    {{ product.name }} - {{ product.price }} €
+    <span *ngIf="product.promo">🔥 Promo !</span>
+
+  </li>
+</ul>

@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
+import {NgForOf, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-exemple-directives',
-  imports: [],
+  imports: [
+    NgForOf,
+    NgIf
+  ],
   templateUrl: './exemple-directives.html',
   styleUrl: './exemple-directives.css'
 })
