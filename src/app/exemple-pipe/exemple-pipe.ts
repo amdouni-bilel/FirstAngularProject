@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import {CurrencyPipe, DatePipe, UpperCasePipe} from '@angular/common';
+import {CurrencyPipe, DatePipe, LowerCasePipe, UpperCasePipe} from '@angular/common';
 
 @Component({
   selector: 'app-exemple-pipe',
   imports: [
     UpperCasePipe,
     DatePipe,
-    CurrencyPipe
+    CurrencyPipe,
+    LowerCasePipe
   ],
   templateUrl: './exemple-pipe.html',
   styleUrl: './exemple-pipe.css'

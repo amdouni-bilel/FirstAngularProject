@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {NgClass, NgForOf, NgIf, NgStyle} from '@angular/common';
+import {HighlightDirective} from './highlight';
 
 @Component({
   selector: 'app-exemple-directives',
@@ -8,6 +9,7 @@ import {NgClass, NgForOf, NgIf, NgStyle} from '@angular/common';
     NgIf,
     NgClass,
     NgStyle,
+    HighlightDirective,
   ],
   templateUrl: './exemple-directives.html',
   styleUrl: './exemple-directives.css'

@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import {FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators} from '@angular/forms';
 import {CommonModule} from '@angular/common';
+import {HighlightDirective} from '../../exemple-directives/highlight';
 
 @Component({
   selector: 'app-reactive-forms',
-  imports: [  FormsModule , CommonModule , ReactiveFormsModule],
+  imports: [FormsModule, CommonModule, ReactiveFormsModule, HighlightDirective],
   templateUrl: './reactive-forms.html',
   styleUrl: './reactive-forms.css'
 })
