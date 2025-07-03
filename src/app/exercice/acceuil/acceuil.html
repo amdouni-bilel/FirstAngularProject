@@ -1,0 +1,11 @@
+<h2>Bienvenue sur {{ nom | uppercase }}</h2>
+<p>Nous sommes le {{ today | date:'fullDate' }}</p>
+
+<h3>Liste des cours :</h3>
+<ul>
+  <li *ngFor="let item of cours"
+      [ngClass]="{important: item.includes('Form')}"
+      [ngStyle]="item.includes('Pipe') ? {color: 'blue'} : {}">
+    {{ item }}
+  </li>
+</ul>

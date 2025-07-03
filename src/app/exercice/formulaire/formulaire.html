@@ -1,0 +1,16 @@
+<h2>Formulaire - Reactive Forms</h2>
+<form [formGroup]="form" (ngSubmit)="submitForm()">
+  <div>
+    <label>Nom:</label>
+    <input type="text" formControlName="nom">
+  </div>
+
+  <div>
+    <label>Age:</label>
+    <input type="number" formControlName="age">
+  </div>
+
+  <button type="submit" [disabled]="form.invalid">Envoyer</button>
+</form>
+
+<p *ngIf="form.valid">Formulaire valide !</p>

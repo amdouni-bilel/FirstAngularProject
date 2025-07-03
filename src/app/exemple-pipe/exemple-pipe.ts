@@ -7,7 +7,7 @@ import {CurrencyPipe, DatePipe, LowerCasePipe, UpperCasePipe} from '@angular/com
     UpperCasePipe,
     DatePipe,
     CurrencyPipe,
-    LowerCasePipe
+
   ],
   templateUrl: './exemple-pipe.html',
   styleUrl: './exemple-pipe.css'
