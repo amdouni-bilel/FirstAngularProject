@@ -1,31 +1,25 @@
-<h2>Liste des utilisateurs</h2>
-<table border="1" cellpadding="8">
+<h2>Liste mta3 useers</h2>
+<table border="1" cellpadding="10" cellspacing="2">
+
   <thead>
   <tr>
-    <th>ID</th>
+    <th>Id</th>
     <th>Nom</th>
     <th>Email</th>
-    <th>Âge</th>
+    <th>Age</th>
     <th>Actions</th>
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let user of users">
+  <tr  *ngFor=" let user of users">
     <td>{{ user.id }}</td>
-    <td>
-      <input [(ngModel)]="user.name" />
-    </td>
-    <td>
-      <input [(ngModel)]="user.email" />
-    </td>
-    <td>
-      <input type="number" [(ngModel)]="user.age" />
-    </td>
-    <td>
-      <button (click)="updateUser(user)">Modifier</button>
-      <button (click)="deleteUser(user.id)">Supprimer</button>
-    </td>
-
+    <td>{{ user.name }}</td>
+    <td>{{ user.email }}</td>
+    <td>{{ user.age }}</td>
+    <td><button>Modifier</button></td>
+    <td><button>Supprimer</button></td>
   </tr>
   </tbody>
 </table>
+
+
