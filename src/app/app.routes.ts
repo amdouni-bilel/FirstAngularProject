@@ -7,6 +7,8 @@ import {ExemplePipe} from './exemple-pipe/exemple-pipe';
 import {ExempleTemplate} from './exemple-template/exemple-template';
 import {Acceuil} from './exercice/acceuil/acceuil';
 import {Formulaire} from './exercice/formulaire/formulaire';
+import {UsersList} from './services/users-list/users-list';
+import {AddUser} from './services/add-user/add-user';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'data-binding', pathMatch: 'full' },
@@ -17,5 +19,8 @@ export const routes: Routes = [
   { path: 'pipes', component: ExemplePipe },
   { path: 'templates', component: ExempleTemplate },
   { path: 'exercice-accueil', component: Acceuil },
-  { path: 'exercice-formulaire', component: Formulaire }
+  { path: 'exercice-formulaire', component: Formulaire },
+  { path: 'users', component: UsersList },
+  { path: 'add-user', component: AddUser },
+
 ];

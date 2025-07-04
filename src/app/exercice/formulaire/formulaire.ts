@@ -15,8 +15,9 @@ export class Formulaire {
   form: FormGroup;
 
   constructor(private fb: FormBuilder) {
-    this.form = this.fb.group({
-      nom: ['', Validators.required],
+    this.form =  //est une propriété de la classe de type FormGroup.
+      this.fb.group({  //crée un nouveau groupe de champs de formulaire (équivalent à new FormGroup() mais plus simple et lisible).
+      nom: ['', Validators.required], //Champ de type texte. Valeur initiale : chaîne vide ''.
       age: ['', [Validators.required, Validators.min(1)]]
     });
   }
