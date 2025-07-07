@@ -25,4 +25,22 @@ export class UsersList implements OnInit{
     );
     console.log(this.users , "api users") ;
   }
+
+  deleteUser(id: number): void {
+    if(confirm('Etes vous squr de supprimer cette ligne ?')){
+      this.userService.deleteUser(id).subscribe({
+        next:()=>{
+          this.users = this.users.filter(user=>user.id!==id);
+          console.log("user supprime avec succes !")
+        },
+        error: err =>
+        {
+          alert('erreur lors de la suppression !')
+          console.log('rahi saretli ghaklta' , err)
+        }
+
+      })
+    }
+  }
+
 }

@@ -25,6 +25,8 @@ export class UsersService {
     return this.http.post<UsersModel>(this.apiUrl, null, { params });
   }
 
-
+  deleteUser(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/${id}`);
+  }
 
 }
