@@ -29,4 +29,7 @@ export class UsersService {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
 
+  updateUser(id:number , user: Partial<UsersModel>):Observable<UsersModel> {
+   return  this.http.put<UsersModel>(`${this.apiUrl}/${user.id}`, user);
+  }
 }
